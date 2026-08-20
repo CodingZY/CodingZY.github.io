@@ -1,0 +1,19 @@
+# Authors
+#
+# 站点作者信息。在文章 front matter 中通过 `author: ZhangYing` 引用本条目。
+# 备份其他作者可在此新增同级条目。
+
+ZhangYing:
+  name   : "ZhangYing" # 你的姓名
+  bio    : "热爱技术与 AI，乐于分享与探索。" # 个人简介（默认值，可改）
+  avatar : "/assets/images/logo.jpg" # 头像，由 ENFP.jpg 生成（与站点 logo 同图）
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/CodingZY" # 你的 GitHub 主页
+    - label: "zhihu"
+      icon: "fab fa-fw fa-zhihu"
+      url: "https://www.zhihu.com/people/91-53-25-41" # 你的知乎主页
+    - label: "xiaohongshu"
+      icon: "assets/images/icons/xiaohongshu.svg"
+      url: "https://xhslink.cn/m/8s6BGzHnfVu" # 你的小红书主页

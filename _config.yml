@@ -1,0 +1,336 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+# locale                   : "en-US"
+locale                   : "zh-CN" # Set to your preferred locale, e.g., "en-US", "zh-CN"
+lang                     : "zh-CN" # Set to your preferred language, e.g., "
+rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+title                    : "ZhangYing 的个人主页" # 站点标题，显示在页头与浏览器标签（默认值，可改）
+title_separator          : "-"
+subtitle                 : "记录技术、科研与 AI 的探索。" # 站点副标题（默认值，可改）
+name                     : "ZhangYing" # 你的姓名
+description              : "ZhangYing 的个人主页——技术分享、科研学习与 AI 脑洞。" # 站点描述，用于 SEO 与社交分享（默认值，可改）
+url                      : "https://codingzy.github.io" # 站点 URL（由 GitHub 用户名 CodingZY 推导）
+baseurl                  : ""
+repository               : "CodingZY/CodingZY.github.io" # GitHub 仓库（用户名/仓库名）
+teaser                   : "/assets/images/og-default.png"
+logo                     : "/assets/images/logo.jpg" # 站点 logo（由 ENFP.jpg 生成，400x400；如需更换，替换此文件或改路径）
+masthead_title           : "ZhangYing 的个人主页" # 页头大标题（默认值，可改）
+future                   : true      # Allow future posts to be displayed
+breadcrumbs              : true     #, false (default)
+words_per_minute         : 200
+enable_copy_code_button  : true #, false (default)
+copyright                : # "copyright" name, defaults to site.title
+copyright_url            : # "copyright" URL, defaults to site.url
+comments:
+  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                : 
+    num_posts            : 8 # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  giscus:
+    repo_id              : YOUR_GISCUS_REPO_ID # TODO: 在 https://giscus.app 获取后替换
+    category_name        : "General" # TODO: 替换为你在仓库 Discussions 创建的类别名
+    category_id          : YOUR_GISCUS_CATEGORY_ID # TODO: 在 https://giscus.app 获取后替换
+    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
+    theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    strict               : # 1 for enabled, 0 for disabled (default)
+    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
+    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
+    lang                 : "zh-CN" # "en" (default)
+    lazy                 : true # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+  hide                   : # true, false (default)
+# 搜索功能已移除（原 search.json / assets/js/search.js / _pages/search.md 已删除）
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
+
+# Social Sharing
+# TODO: 按需填写或注释掉以下社交平台用户名
+twitter:
+  username               : # YOUR_TWITTER_USERNAME
+facebook:
+  username               : # YOUR_FACEBOOK_USERNAME
+  app_id                 :
+  publisher              :
+og_image                 : "/assets/images/og-default.png" # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : "google-gtag"  # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : # YOUR_GA_TRACKING_ID # TODO: 可选，Google Analytics 跟踪 ID，留空则不启用
+    anonymize_ip         : # true, false (default)
+footer:
+  custom: true
+
+# Site Author
+author:
+  name             : "ZhangYing" # 你的姓名
+  avatar           : "/assets/images/logo.jpg" # 头像，由 ENFP.jpg 生成（与站点 logo 同图）；如需单独换头像，替换此文件或改路径
+  bio              : "热爱技术与 AI，乐于分享与探索。" # 个人简介（默认值，可改）
+  location         : # TODO: 你的所在地（留空则不显示）
+  email            : "393354431@qq.com" # 你的邮箱
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/CodingZY" # 你的 GitHub 主页
+    - label: "zhihu"
+      icon: "fab fa-fw fa-zhihu"
+      url: "https://www.zhihu.com/people/91-53-25-41" # 你的知乎主页
+    - label: "xiaohongshu"
+      icon: "assets/images/icons/xiaohongshu.svg"
+      url: "https://xhslink.cn/m/8s6BGzHnfVu" # 你的小红书主页
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/CodingZY" # 你的 GitHub 主页
+    - label: "zhihu"
+      icon: "fab fa-fw fa-zhihu"
+      url: "https://www.zhihu.com/people/91-53-25-41" # 你的知乎主页
+    - label: "xiaohongshu"
+      icon: "assets/images/icons/xiaohongshu.svg"
+      url: "https://xhslink.cn/m/8s6BGzHnfVu" # 你的小红书主页
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+  - ref
+  - _scripts
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Pagination with jekyll-paginate
+paginate: 8 # amount of posts to show
+paginate_path: /page:num/
+
+# Pagination with jekyll-paginate-v2
+# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+#   for configuration details
+pagination:
+  # Set enabled to true to use paginate v2
+  enabled: false
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+collections:
+  navi:
+    output: true
+    permalink: /collection/:path/
+  idea:
+    output: true
+    permalink: /idea/:name/
+  research:
+    output: true
+    permalink: /research/:name/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      date_format: "%Y-%m-%d"
+      toc: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      classes: wide
+  # _navi
+  - scope:
+      path: ""
+      type: navi
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      classes: wide
+  # _idea
+  - scope:
+      path: ""
+      type: idea
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true

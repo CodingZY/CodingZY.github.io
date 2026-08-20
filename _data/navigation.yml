@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "关于我"
+    url: "/about/"
+  - title: "技术share"
+    url: "/blog/"
+  - title: "科研学习"
+    url: "/research/"
+  - title: "AI脑洞"
+    url: "/idea/"

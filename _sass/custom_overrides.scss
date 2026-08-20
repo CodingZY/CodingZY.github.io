@@ -1,0 +1,16 @@
+/*
+  Custom overrides for disabling sticky TOC in right sidebar
+*/
+
+@include breakpoint($large) {
+  .sidebar__right.sticky {
+    position: static !important;
+    top: auto !important;
+    float: none !important;
+  }
+  .sidebar__right.sticky .toc__menu,
+  .sidebar__right.sticky .toc .toc__menu {
+    overflow-y: visible !important;
+    max-height: none !important;
+  }
+}
