@@ -51,9 +51,9 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo_id              : YOUR_GISCUS_REPO_ID # TODO: 在 https://giscus.app 获取后替换
+    repo_id              : "YOUR_GISCUS_REPO_ID" # TODO: 在 https://giscus.app 获取后替换
     category_name        : "General" # TODO: 替换为你在仓库 Discussions 创建的类别名
-    category_id          : YOUR_GISCUS_CATEGORY_ID # TODO: 在 https://giscus.app 获取后替换
+    category_id          : "YOUR_GISCUS_CATEGORY_ID" # TODO: 在 https://giscus.app 获取后替换
     discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
     theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
