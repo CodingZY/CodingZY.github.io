@@ -6,7 +6,7 @@
 ZhangYing:
   name   : "ZhangYing" # 你的姓名
   bio    : "热爱技术与 AI，乐于分享与探索。" # 个人简介（默认值，可改）
-  avatar : "/assets/images/logo.jpg" # 头像，由 ENFP.jpg 生成（与站点 logo 同图）
+  avatar : "/assets/images/avatar.jpg" # 侧栏作者头像，由 photo.jpg 裁成方形
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
