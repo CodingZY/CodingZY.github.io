@@ -110,7 +110,8 @@ author:
   avatar           : "/assets/images/logo.jpg" # 头像，由 ENFP.jpg 生成（与站点 logo 同图）；如需单独换头像，替换此文件或改路径
   bio              : "热爱技术与 AI，乐于分享与探索。" # 个人简介（默认值，可改）
   location         : # TODO: 你的所在地（留空则不显示）
-  email            : "393354431@qq.com" # 你的邮箱
+  email            : "393354431@qq.com" # 你的邮箱（保留用于 SEO/结构化数据）
+  hide_email       : true # 设为 true 则不在侧栏显示邮箱链接（author.email 仍保留），false 则恢复显示
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

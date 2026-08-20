@@ -1,9 +1,7 @@
 ---
 title: ZhangYing
 description: ZhangYing 的个人简历。 # TODO: 替换为你的简历描述
-date: 2025-07-01
 permalink: /about/
-tags: [个人简历] # TODO: 按需修改标签
 ---
 
 <p style="text-align:center;font-size:1.1rem;color:#888;">

@@ -53,7 +53,7 @@
         </li>
       {% endif %}
 
-      {% if author.email %}
+      {% if author.email and author.hide_email != true %}
         <li>
           <a href="mailto:{{ author.email }}" rel="me" class="u-email">
             <meta itemprop="email" content="{{ author.email }}" />
