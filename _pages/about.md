@@ -8,8 +8,7 @@ permalink: /about/
   <div>
     <p><strong>电话 / 微信：</strong>13554005764</p>
     <p><strong>邮箱：</strong><a href="mailto:393354431@qq.com">393354431@qq.com</a></p>
-    <p><strong>所在地：</strong>WuHan</p>
-    <p><strong>擅长领域：</strong>开放词汇目标检测(文本+视觉模态)、Agent</p>
+    <p><strong>擅长领域：</strong>Agent、开放词汇目标检测(文本+视觉模态)</p>
   </div>
   <img src="/assets/images/photo.jpg" alt="ZhangYing" width="220" loading="lazy" decoding="async" style="border-radius:8px;">
 </div>
@@ -30,10 +29,3 @@ permalink: /about/
 
 <!-- TODO: 技能与专业能力 -->
 
-## 竞赛 / 荣誉
-
-<!-- TODO: 竞赛与荣誉 -->
-
-## 联系方式
-
-<!-- TODO: 联系方式，如需展示二维码可在此处放图 -->

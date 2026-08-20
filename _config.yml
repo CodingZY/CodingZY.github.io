@@ -29,7 +29,7 @@ baseurl                  : ""
 repository               : "CodingZY/CodingZY.github.io" # GitHub 仓库（用户名/仓库名）
 teaser                   : "/assets/images/og-default.png"
 logo                     : "/assets/images/logo.jpg" # 站点 logo（由 ENFP.jpg 生成，400x400；如需更换，替换此文件或改路径）
-masthead_title           : "ZhangYing 的个人主页" # 页头大标题（默认值，可改）
+masthead_title           : "ZhangYing 的学习小世界" # 页头大标题（默认值，可改）
 future                   : true      # Allow future posts to be displayed
 breadcrumbs              : true     #, false (default)
 words_per_minute         : 200
