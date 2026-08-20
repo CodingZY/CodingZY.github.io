@@ -19,7 +19,7 @@ tags: [个人简历] # TODO: 按需修改标签
     <p><strong>所在地：</strong>TODO</p>
     <p><strong>擅长领域：</strong>TODO</p>
   </div>
-  <!-- TODO: 可放一张头像图片 <img src="/assets/images/your-avatar.jpg" alt="YOUR_NAME" width="220" loading="lazy" decoding="async"> -->
+  <img src="/assets/images/photo.jpg" alt="ZhangYing" width="220" loading="lazy" decoding="async" style="border-radius:8px;">
 </div>
 
 ## 教育背景
