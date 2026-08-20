@@ -19,3 +19,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------------------------
+
+本仓库包含两类内容，版权归属不同：
+
+1. 主题代码与样式（`_layouts/`、`_includes/`、`_sass/`、`assets/css/`、
+   `assets/js/` 等目录下的 Minimal Mistakes 主题文件）遵循上文 MIT 许可，
+   版权归 Michael Rose 及贡献者所有。
+
+2. 站点个人内容（`_posts/`、`_research/`、`_idea/`、`_pages/` 下的文章与
+   页面，`index.html`，`assets/images/` 下的个人图片，以及 `_config.yml`、
+   `_data/` 中的站点与作者信息）版权归 ZhangYing 所有，未经授权不得
+   复制、转载或用于其他目的。
