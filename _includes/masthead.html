@@ -21,9 +21,6 @@
                     class="masthead__dropdown-title"
                     {% if link.description %} title="{{ link.description }}"{% endif %}
                   >{{ link.title }}</a>
-                  <button class="masthead__dropdown-toggle" type="button" aria-label="展开子菜单">
-                    <i class="fas fa-caret-down"></i>
-                  </button>
                   <ul class="masthead__dropdown-menu">
                     {%- for child in link.children -%}
                       <li>
@@ -61,26 +58,3 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.masthead__dropdown-toggle').forEach(function (btn) {
-      var wrap = btn.closest('.masthead__dropdown');
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        var open = wrap.classList.toggle('is-open');
-        btn.classList.toggle('is-open', open);
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-    });
-    // 点击其他区域或选择菜单项后收起
-    document.addEventListener('click', function (e) {
-      document.querySelectorAll('.masthead__dropdown.is-open').forEach(function (wrap) {
-        if (!wrap.contains(e.target)) {
-          wrap.classList.remove('is-open');
-          var b = wrap.querySelector('.masthead__dropdown-toggle');
-          if (b) b.classList.remove('is-open');
-        }
-      });
-    });
-  });
-</script>

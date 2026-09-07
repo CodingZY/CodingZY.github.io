@@ -15,7 +15,7 @@
   }
 }
 
-// Masthead dropdown menu (for nav items with children, e.g. 秋招)
+// Masthead dropdown menu (for nav items with children, e.g. 秋招) — hover to open
 .masthead__menu-item .masthead__dropdown {
   position: relative;
   display: inline-flex;
@@ -23,23 +23,6 @@
 
   .masthead__dropdown-title {
     color: inherit;
-  }
-
-  .masthead__dropdown-toggle {
-    padding: 0 0.35em;
-    border: 0;
-    background: transparent;
-    color: inherit;
-    cursor: pointer;
-    font-size: 0.8em;
-
-    i {
-      transition: transform 0.2s ease;
-    }
-
-    &.is-open i {
-      transform: rotate(180deg);
-    }
   }
 
   .masthead__dropdown-menu {
@@ -68,7 +51,18 @@
     }
   }
 
-  &.is-open .masthead__dropdown-menu {
+  // 悬停展开（加 padding-top 避免鼠标移动间隙导致菜单收起）
+  &:hover .masthead__dropdown-menu,
+  &:focus-within .masthead__dropdown-menu {
     display: block;
+  }
+
+  .masthead__dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    width: 100%;
+    height: 0.5em;
   }
 }
