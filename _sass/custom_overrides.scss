@@ -18,32 +18,32 @@
 // Masthead dropdown menu (for nav items with children, e.g. 秋招)
 .masthead__menu-item .masthead__dropdown {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 
-  summary {
-    list-style: none;
-    cursor: pointer;
+  .masthead__dropdown-title {
     color: inherit;
-
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &::marker {
-      content: "";
-    }
-
-    i {
-      margin-left: 0.3em;
-      font-size: 0.8em;
-    }
   }
 
-  &[open] > summary i {
-    transform: rotate(180deg);
+  .masthead__dropdown-toggle {
+    padding: 0 0.35em;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 0.8em;
+
+    i {
+      transition: transform 0.2s ease;
+    }
+
+    &.is-open i {
+      transform: rotate(180deg);
+    }
   }
 
   .masthead__dropdown-menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -66,5 +66,9 @@
         background-color: #f5f5f5;
       }
     }
+  }
+
+  &.is-open .masthead__dropdown-menu {
+    display: block;
   }
 }
