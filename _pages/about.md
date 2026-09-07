@@ -47,7 +47,7 @@ permalink: /about/
 
 ## 项目 / 科研经历
 
-### AI_Cowork_Game（[GitHub 地址](https://github.com/CodingZY/AI_Cowork_Game)）
+### AI_Cowork_Game（[AI_Cowork_Game GitHub 地址](https://github.com/CodingZY/AI_Cowork_Game)）
 
 - **项目背景**：基于 **Claude Code CLI 和自定义 Game Skills** 打通自动化生成中型网页游戏最后一公里——将用户一句简单的想法，落地成游戏整体设计文档 **GDD**、进行美术资产生成、编码和自动化测试，并支持用户试玩反馈修改、使用 **git tag** 版本管理、**langfuse** 对各阶段成功率、耗时、token 用量进行监控，用于优化现有流程和 skill。
   - 引入**持久化状态机流程编排 Temporal**，适配暂停等人、重启回滚、并行编排、长流程超时｜重试｜取消精细化管理，把头脑风暴 skill 得到 GDD 的过程变成可暂停、可恢复、可人工干预的流程。
