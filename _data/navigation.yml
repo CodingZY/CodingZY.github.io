@@ -8,3 +8,10 @@ main:
     url: "/research/"
   - title: "AI脑洞"
     url: "/idea/"
+  - title: "秋招"
+    url: "/qiuzhao/"
+    children:
+      - title: "hot100"
+        url: "/qiuzhao/hot100/"
+      - title: "Agent八股"
+        url: "/qiuzhao/agent/"

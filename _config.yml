@@ -282,6 +282,12 @@ collections:
   research:
     output: true
     permalink: /research/:name/
+  hot100:
+    output: true
+    permalink: /qiuzhao/hot100/:name/
+  agent:
+    output: true
+    permalink: /qiuzhao/agent/:name/
 
 # Defaults
 defaults:
@@ -330,6 +336,24 @@ defaults:
   - scope:
       path: ""
       type: research
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true
+  # _hot100
+  - scope:
+      path: ""
+      type: hot100
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true
+  # _agent
+  - scope:
+      path: ""
+      type: agent
     values:
       layout: single
       author_profile: true
