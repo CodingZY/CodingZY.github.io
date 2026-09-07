@@ -300,7 +300,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
       show_date: true
       date_format: "%Y-%m-%d"
@@ -321,7 +321,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       classes: wide
   # _idea
   - scope:
@@ -330,7 +330,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       toc: true
   # _research
   - scope:
@@ -339,7 +339,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       toc: true
   # _hot100
   - scope:
@@ -348,7 +348,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       toc: true
   # _agent
   - scope:
@@ -357,5 +357,5 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       toc: true
