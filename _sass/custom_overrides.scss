@@ -29,6 +29,10 @@
       display: none;
     }
 
+    &::marker {
+      content: "";
+    }
+
     i {
       margin-left: 0.3em;
       font-size: 0.8em;

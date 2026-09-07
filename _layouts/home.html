@@ -10,6 +10,10 @@ layout: archive
   {% assign posts = site.idea %}
 {% elsif page.collection == "resources" %}
   {% assign posts = site.resources %}
+{% elsif page.collection == "hot100" %}
+  {% assign posts = site.hot100 %}
+{% elsif page.collection == "agent" %}
+  {% assign posts = site.agent %}
 {% elsif paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
