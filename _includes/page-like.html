@@ -1,0 +1,60 @@
+<!-- 👍 页面点赞按钮（localStorage 实现，无需后端） -->
+<div class="like-btn-wrap" data-like-key="{{ page.url }}">
+  <button class="like-btn" type="button" aria-label="点赞本页">
+    <span class="like-icon">🤍</span>
+    <span class="like-count">0</span>
+  </button>
+</div>
+
+<style>
+  .like-btn-wrap { text-align: center; margin: 1.5rem 0 .5rem; }
+  .like-btn {
+    display: inline-flex; align-items: center; gap: .45rem;
+    padding: .45rem 1.2rem; font-size: .95rem;
+    border: 1px solid #d0d4dc; border-radius: 2rem;
+    background: #fff; color: #444; cursor: pointer;
+    transition: all .2s ease;
+  }
+  .like-btn:hover { border-color: #e25555; color: #e25555; }
+  .like-btn.liked { border-color: #e25555; color: #e25555; background: #fdf1f1; }
+  .like-btn.liked .like-icon { animation: like-pop .3s ease; }
+  .like-btn .like-count { font-variant-numeric: tabular-nums; }
+  @keyframes like-pop {
+    0% { transform: scale(1); } 50% { transform: scale(1.4); } 100% { transform: scale(1); }
+  }
+  @media (prefers-color-scheme: dark) {
+    .like-btn { background: transparent; border-color: #3a3f4b; color: #aaa; }
+    .like-btn:hover, .like-btn.liked { border-color: #e25555; color: #e25555; background: rgba(226,85,85,.08); }
+  }
+</style>
+
+<script>
+(function () {
+  var wrap = document.querySelector('[data-like-key]');
+  if (!wrap) return;
+  var key = 'like:' + wrap.getAttribute('data-like-key');
+  var btn = wrap.querySelector('.like-btn');
+  var icon = wrap.querySelector('.like-icon');
+  var countEl = wrap.querySelector('.like-count');
+
+  function read() {
+    try { return JSON.parse(localStorage.getItem(key)) || { liked: false, count: 0 }; }
+    catch (e) { return { liked: false, count: 0 }; }
+  }
+  function render() {
+    var s = read();
+    countEl.textContent = s.count;
+    btn.classList.toggle('liked', s.liked);
+    icon.textContent = s.liked ? '❤️' : '🤍';
+  }
+  btn.addEventListener('click', function () {
+    var s = read();
+    s.liked = !s.liked;
+    s.count += s.liked ? 1 : -1;
+    if (s.count < 0) s.count = 0;
+    try { localStorage.setItem(key, JSON.stringify(s)); } catch (e) {}
+    render();
+  });
+  render();
+})();
+</script>
