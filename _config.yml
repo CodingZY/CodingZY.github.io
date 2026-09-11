@@ -124,9 +124,17 @@ author:
       url: "https://xhslink.cn/m/8s6BGzHnfVu" # 你的小红书主页
 
 # Site Footer
-# 页脚社交链接已删除（侧边栏作者名片已展示，避免重复）
 footer:
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/CodingZY" # 你的 GitHub 主页
+    - label: "zhihu"
+      icon: "fab fa-fw fa-zhihu"
+      url: "https://www.zhihu.com/people/91-53-25-41" # 你的知乎主页
+    - label: "xiaohongshu"
+      icon: "assets/images/icons/xiaohongshu.svg"
+      url: "https://xhslink.cn/m/8s6BGzHnfVu" # 你的小红书主页
 
 # Reading Files
 include:
