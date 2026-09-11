@@ -70,7 +70,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true
 # 搜索功能已移除（原 search.json / assets/js/search.js / _pages/search.md 已删除）
 # SEO Related
 google_site_verification :
