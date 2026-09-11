@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: archive
 title: "hot100"
 permalink: /qiuzhao/hot100/
 collection: hot100
