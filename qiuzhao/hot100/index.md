@@ -25,8 +25,6 @@ date: 2026-09-07
   }
 </style>
 
-{{ content }}
-
 <ul class="hot100-list">
   {% assign posts = site.hot100 | sort: "date" | reverse %}
   {% for post in posts %}
