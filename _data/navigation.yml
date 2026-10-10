@@ -2,12 +2,20 @@
 main:
   - title: "关于我"
     url: "/about/"
-  - title: "技术share"
-    url: "/blog/"
-  - title: "科研学习"
-    url: "/research/"
-  - title: "AI脑洞"
-    url: "/idea/"
+  - title: "Harness Agent"
+    url: "/harness-agent/"
+    children:
+      - title: "手撕Agent"
+        url: "/harness-agent/shousi/"
+      - title: "前沿Harness框架学习"
+        url: "/harness-agent/framework/"
+  - title: "论文阅读"
+    url: "/papers/"
+    children:
+      - title: "RAG"
+        url: "/papers/rag/"
+      - title: "Memory"
+        url: "/papers/memory/"
   - title: "秋招"
     url: "/qiuzhao/"
     children:

@@ -21,9 +21,9 @@ lang                     : "zh-CN" # Set to your preferred language, e.g., "
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "ZhangYing 的个人主页" # 站点标题，显示在页头与浏览器标签（默认值，可改）
 title_separator          : "-"
-subtitle                 : "记录技术、科研与 AI 的探索。" # 站点副标题（默认值，可改）
+subtitle                 : "记录 Harness Agent、论文阅读与秋招的探索。" # 站点副标题（默认值，可改）
 name                     : "ZhangYing" # 你的姓名
-description              : "ZhangYing 的个人主页——技术分享、科研学习与 AI 脑洞。" # 站点描述，用于 SEO 与社交分享（默认值，可改）
+description              : "ZhangYing 的个人主页——Harness Agent 实践、论文阅读与秋招备战。" # 站点描述，用于 SEO 与社交分享（默认值，可改）
 url                      : "https://codingzy.github.io" # 站点 URL（由 GitHub 用户名 CodingZY 推导）
 baseurl                  : ""
 repository               : "CodingZY/CodingZY.github.io" # GitHub 仓库（用户名/仓库名）
@@ -276,12 +276,18 @@ collections:
   navi:
     output: true
     permalink: /collection/:path/
-  idea:
+  shousi:
     output: true
-    permalink: /idea/:name/
-  research:
+    permalink: /harness-agent/shousi/:name/
+  framework:
     output: true
-    permalink: /research/:name/
+    permalink: /harness-agent/framework/:name/
+  rag:
+    output: true
+    permalink: /papers/rag/:name/
+  memory:
+    output: true
+    permalink: /papers/memory/:name/
   hot100:
     output: true
     permalink: /qiuzhao/hot100/:name/
@@ -323,19 +329,37 @@ defaults:
       author_profile: true
       share: false
       classes: wide
-  # _idea
+  # _shousi（手撕Agent）
   - scope:
       path: ""
-      type: idea
+      type: shousi
     values:
       layout: single
       author_profile: true
       share: false
       toc: true
-  # _research
+  # _framework（前沿Harness框架学习）
   - scope:
       path: ""
-      type: research
+      type: framework
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      toc: true
+  # _rag（论文阅读 · RAG）
+  - scope:
+      path: ""
+      type: rag
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      toc: true
+  # _memory（论文阅读 · Memory）
+  - scope:
+      path: ""
+      type: memory
     values:
       layout: single
       author_profile: true

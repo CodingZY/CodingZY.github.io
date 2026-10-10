@@ -6,9 +6,7 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% if page.collection == "idea" %}
-  {% assign posts = site.idea %}
-{% elsif page.collection == "resources" %}
+{% if page.collection == "resources" %}
   {% assign posts = site.resources %}
 {% elsif page.collection == "hot100" %}
   {% assign posts = site.hot100 %}

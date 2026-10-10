@@ -4,10 +4,14 @@ Contributor guide for a personal website built with [Jekyll](https://jekyllrb.co
 
 ## Project Structure & Module Organization
 
-- `_posts/` — blog articles (section "技术share"), named `YYYY-MM-DD-slug.md`
 - `_pages/` — standalone pages (`about.md`, `categories.md`, `tags.md`, `404.md`) with a `permalink` front-matter field
-- `_research/` — Jekyll collection for the "科研学习" section
-- `_idea/` — Jekyll collection for the "AI脑洞" section
+- `_shousi/` — Jekyll collection for "Harness Agent → 手撕Agent" (`/harness-agent/shousi/`)
+- `_framework/` — Jekyll collection for "Harness Agent → 前沿Harness框架学习" (`/harness-agent/framework/`)
+- `_rag/` — Jekyll collection for "论文阅读 → RAG" (`/papers/rag/`)
+- `_memory/` — Jekyll collection for "论文阅读 → Memory" (`/papers/memory/`)
+- `_hot100/` — Jekyll collection for "秋招 → hot100" (`/qiuzhao/hot100/`)
+- `_agent/` — Jekyll collection for "秋招 → Agent八股" (`/qiuzhao/agent/`)
+- `harness-agent/`, `papers/`, `qiuzhao/` — section landing pages (one `index.md` per section / subsection)
 - `_data/` — site data (`navigation.yml`, `authors.yml`, `ui-text.yml`)
 - `_config.yml` — site metadata, navigation, and comment settings
 - `_includes/`, `_layouts/`, `_sass/` — theme components and styles
@@ -31,8 +35,8 @@ There is no test suite. Verify new content locally with `bundle exec jekyll serv
 
 ## Coding Style & Naming Conventions
 
-- Content uses YAML front matter: `title`, `categories`, `tags`, and `date` for posts; `permalink` for pages
-- Posts and dated collections use `YYYY-MM-DD-slug.md`; slugs are lowercase with hyphens
+- Content uses YAML front matter: `title`, `date`, and `tags` for collection docs; `permalink` for pages
+- Collection docs use lowercase hyphenated slugs (e.g. `what-is-agent.md`); the `date` field drives list ordering (newest first)
 - Keep `_config.yml` settings commented; restart the server after editing it
 - No linters are configured; use 2-space indentation for YAML and follow existing Markdown style
 

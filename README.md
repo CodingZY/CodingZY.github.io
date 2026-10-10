@@ -8,11 +8,14 @@
 
 | 栏目 | 路径 | 内容目录 | 说明 |
 |---|---|---|---|
-| 首页 | `/` | `index.html` | 欢迎语与最新文章列表 |
+| 首页 | `/` | `index.html` | 欢迎语 |
 | 关于我 | `/about/` | `_pages/about.md` | 中文简历，另见 `/about-en/` 英文版 |
-| 技术share | `/blog/` | `_posts/` | 博客文章（按 `YYYY-MM-DD-slug.md` 命名） |
-| 科研学习 | `/research/` | `_research/` | 科研集合 |
-| AI脑洞 | `/idea/` | `_idea/` | 观点 / 脑洞集合 |
+| Harness Agent · 手撕Agent | `/harness-agent/shousi/` | `_shousi/` | 从零手写 Agent 的实现笔记 |
+| Harness Agent · 前沿Harness框架学习 | `/harness-agent/framework/` | `_framework/` | 前沿 Harness 框架的设计与源码学习 |
+| 论文阅读 · RAG | `/papers/rag/` | `_rag/` | RAG 方向论文笔记 |
+| 论文阅读 · Memory | `/papers/memory/` | `_memory/` | Memory 方向论文笔记 |
+| 秋招 · hot100 | `/qiuzhao/hot100/` | `_hot100/` | LeetCode Hot 100 刷题笔记 |
+| 秋招 · Agent八股 | `/qiuzhao/agent/` | `_agent/` | Agent 方向面试八股 |
 
 ## 本地构建
 
@@ -28,8 +31,7 @@ bundle exec jekyll build    # 构建到 _site/
 
 ## 如何新增内容
 
-- **博客文章（技术share）**：在 `_posts/` 下新建 `YYYY-MM-DD-slug.md`，front matter 参考 `layout: single`、`categories`、`tags` 等。
-- **集合文章（科研学习 / AI脑洞）**：在对应集合目录（`_research/`、`_idea/`）下新建文档，front matter 参考现有格式。
+- **栏目文章**：在对应集合目录（`_shousi/`、`_framework/`、`_rag/`、`_memory/`、`_hot100/`、`_agent/`）下新建 `.md` 文档，front matter 参考：`title` / `date` / `tags`。
 - **页面**：在 `_pages/` 下新建 `.md`，通过 `permalink` 控制访问路径。
 
 ## 配置说明
@@ -37,7 +39,7 @@ bundle exec jekyll build    # 构建到 _site/
 站点元信息、导航、评论等均在 `_config.yml` 中配置。需要替换的占位项：
 
 - **站点信息**：`title` / `subtitle` / `name` / `description` / `url` / `repository` / `masthead_title`
-- **导航**：`_data/navigation.yml`（当前为「关于我 / 技术share / 科研学习 / AI脑洞」四项，可按需增删）
+- **导航**：`_data/navigation.yml`（当前为「关于我 / Harness Agent / 论文阅读 / 秋招」，可按需增删）
 - **作者信息**：`_config.yml` 的 `author` 段（姓名、头像、简介、所在地、邮箱、社交链接），以及 `_data/authors.yml`
 - **社交链接**：`author.links` 与 `footer.links` 当前仅保留 GitHub / 知乎 / 小红书 三项（占位 URL，需替换 `TODO`）；如需更多平台，参考 Minimal Mistakes 文档添加
 - **页脚链接**：`footer.links`
@@ -53,10 +55,16 @@ bundle exec jekyll build    # 构建到 _site/
 ## 目录速览
 
 ```
-_pages/       页面（关于、分类、标签、404）
-_posts/       博客文章（技术share）
-_idea/        AI脑洞集合
-_research/    科研学习集合
+_pages/        页面（关于、分类、标签、404）
+_shousi/      手撕Agent 集合
+_framework/   前沿Harness框架学习 集合
+_rag/         论文阅读 · RAG 集合
+_memory/      论文阅读 · Memory 集合
+_hot100/      秋招 · hot100 集合
+_agent/       秋招 · Agent八股 集合
+harness-agent/ Harness Agent 栏目页
+papers/       论文阅读 栏目页
+qiuzhao/      秋招 栏目页
 _data/        站点数据（navigation、authors、ui-text）
 _includes/    主题组件
 _layouts/     页面布局

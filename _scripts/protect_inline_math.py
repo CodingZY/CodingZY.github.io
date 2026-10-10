@@ -65,7 +65,7 @@ def protect_file(filepath: Path) -> bool:
 
 
 def main():
-    dirs = sys.argv[1:] if len(sys.argv) > 1 else ['_research', '_resources', '_posts']
+    dirs = sys.argv[1:] if len(sys.argv) > 1 else ['_shousi', '_framework', '_rag', '_memory', '_hot100', '_agent']
     count = 0
     for d in dirs:
         for md_file in Path(d).rglob('*.md'):

@@ -2,59 +2,50 @@
 
 本站由 Jekyll + Minimal Mistakes 构建，部署在 GitHub Pages。本文说明在哪些文件里编辑，就能让对应栏目、页面或配置生效。改完提交推送，GitHub 会自动重新构建，约 1-2 分钟后线上更新。
 
+## 站点栏目结构
+
+| 大栏目 | 子栏目 | 文章目录 | 列表页 |
+|---|---|---|---|
+| Harness Agent | 手撕Agent | `_shousi/` | `/harness-agent/shousi/` |
+| Harness Agent | 前沿Harness框架学习 | `_framework/` | `/harness-agent/framework/` |
+| 论文阅读 | RAG | `_rag/` | `/papers/rag/` |
+| 论文阅读 | Memory | `_memory/` | `/papers/memory/` |
+| 秋招 | hot100 | `_hot100/` | `/qiuzhao/hot100/` |
+| 秋招 | Agent八股 | `_agent/` | `/qiuzhao/agent/` |
+
+另有「关于我」（`_pages/about.md`，路径 `/about/`）。
+
 ## 想改哪里，就编辑哪里
 
 | 想做的事 | 编辑位置 | 说明 |
 |---|---|---|
 | 改站点标题、简介、社交链接、站点信息 | `_config.yml` | 集中配置，改完需等构建生效（见下文「改了不生效？」） |
-| 发「技术share」博客文章 | `_posts/` | 文件名格式 `YYYY-MM-DD-标题英文.md` |
-| 发「科研学习」文章 | `_research/` | 每篇一个 `.md` |
-| 发「AI脑洞」文章 | `_idea/` | 每篇一个 `.md` |
+| 改导航栏目 | `_data/navigation.yml` | 当前为「关于我 / Harness Agent / 论文阅读 / 秋招」 |
+| 发任意子栏目的文章 | 对应集合目录（见上表） | 每篇一个 `.md` |
 | 改「关于我」简历 | `_pages/about.md` | 已填好基础信息，按章节骨架补充即可 |
 | 改首页内容 | `index.html` | 当前是欢迎语占位，可自定义 |
 | 换头像 / logo / 图标 / 图片 | `assets/images/` | 同名替换文件，或放新图后改引用路径 |
 
-## 三类编辑的具体写法
+## 发一篇文章（任意子栏目）
 
-### 1. 发一篇「技术share」博客（`_posts/`）
-
-在 `_posts/` 下新建文件，命名 `2026-08-20-my-first-post.md`（日期 + 英文短标题）。开头是 front matter：
+所有子栏目都是 Jekyll 集合（collection）。在对应目录下新建 `任意名.md`（建议英文短横线命名，如 `memgpt-reading-notes.md`），开头是 front matter：
 
 ```markdown
 ---
 title: 文章标题
-date: 2026-08-20
-categories: [技术]
-tags: [Python, 笔记]
+date: 2026-10-10
+tags: [论文阅读, Memory]
 excerpt: 一两句话摘要，会显示在列表页。
 ---
 
 正文从这里开始，用 Markdown 写。
 ```
 
-- 文件名里的日期决定排序，`date` 字段也填同一天。
-- `categories`、`tags` 按需写，会自动归到 `/categories/`、`/tags/` 页面。
-- 文章会自动出现在首页和「技术share」列表。
+- `date` 决定列表排序（新的在前）。
+- `layout: single` 等页面配置由 `_config.yml` 的 defaults 自动套用，无需手写。
+- 文章会自动出现在对应子栏目的列表页。
 
-### 2. 发「科研学习」或「AI脑洞」文章（`_research/`、`_idea/`）
-
-这两个是独立集合，路径分别生成到 `/research/文章名/`、`/idea/文章名/`。在对应目录下新建 `任意名.md`，开头：
-
-```markdown
----
-title: 文章标题
-date: 2026-08-20
-tags: [多模态, 调研]
-excerpt: 一两句话摘要。
----
-
-正文。
-```
-
-- 文件名建议用英文短横线命名（如 `2026-08-20-llm-survey.md`），避免空格和中文。
-- 该栏目的列表页（`/research/`、`/idea/`）会自动收录。
-
-### 3. 改「关于我」（`_pages/about.md`）
+## 改「关于我」（`_pages/about.md`）
 
 文件已分好章节：教育背景、工作/实习经历、项目/科研经历、专业能力、竞赛/荣誉、联系方式。在每个章节下把 `<!-- TODO ... -->` 注释替换成你的内容即可，用的是普通 Markdown 或 HTML。
 
@@ -83,7 +74,7 @@ excerpt: 一两句话摘要。
 
 ## 常见问题
 
-- **新文章没出现在列表**：检查文件名日期是否是今天或过去，front matter 的 `title`/`date` 是否写全；文章日期设在未来默认不显示（除非 `_config.yml` 的 `future: true`，当前已开启）。
+- **新文章没出现在列表**：检查 front matter 的 `title` / `date` 是否写全；文章日期设在未来默认不显示（除非 `_config.yml` 的 `future: true`，当前已开启）。
 - **图片不显示**：确认图片放在 `assets/images/` 下，引用路径写 `/assets/images/文件名`（开头有斜杠）。
 - **构建失败**：多半是 front matter 格式错（少了引号、缩进不对），去 Actions 页面看红色报错，按提示修。
 
