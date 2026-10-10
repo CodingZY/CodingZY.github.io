@@ -3,8 +3,6 @@ title: "Kubernetes"
 date: 2026-10-10
 ---
 
-**目录**
-
 - [架构概览](#架构概览)
   - [1. 控制平面（Control Plane）组件](#1-控制平面control-plane组件)
   - [2. 工作节点（Worker Node）组件](#2-工作节点worker-node组件)

@@ -3,8 +3,6 @@ title: "GNN-RAG"
 date: 2026-10-10
 ---
 
-**目录**
-
 - [图神经网络 GNN](#图神经网络-gnn)
   - [种子节点](#种子节点)
   - [PageRank Nibble 获得子图](#pagerank-nibble-获得子图)

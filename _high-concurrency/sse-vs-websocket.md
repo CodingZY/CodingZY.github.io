@@ -3,8 +3,6 @@ title: "SSE 与 WebSocket"
 date: 2026-10-10
 ---
 
-**目录**
-
 - [LLM 打字机场景首选 SSE](#llm-打字机场景首选-sse)
 - [客户端与 LLM API 交互，是采用 TCP 还是 UDP？](#客户端与-llm-api-交互是采用-tcp-还是-udp)
 - [TCP 是怎么保证可靠传输的？](#tcp-是怎么保证可靠传输的)

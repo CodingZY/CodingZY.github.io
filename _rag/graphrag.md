@@ -3,15 +3,10 @@ title: "GraphRAG"
 date: 2026-10-10
 ---
 
-**目录**
-
-- [GraphRAG](#graphrag)
 - [RAG vs. GraphRAG](#rag-vs-graphrag)
   - [更新](#更新)
 
 ---
-
-## GraphRAG
 
 **GraphRAG：在查询时进行提示增强**
 

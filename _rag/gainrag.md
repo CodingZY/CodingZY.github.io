@@ -1,11 +1,7 @@
 ---
-title: "GainRAG"
+title: "GainRAG: Preference Alignment in Retrieval-Augmented Generation through Gain Signal Synthesis"
 date: 2026-10-10
 ---
-
-# GainRAG: Preference Alignment in Retrieval-Augmented Generation through Gain Signal Synthesis
-
-**目录**
 
 - [检索器内容偏好和 LLM 回答偏好不一致](#检索器内容偏好和-llm-回答偏好不一致)
 - [困惑度与增益](#困惑度与增益)

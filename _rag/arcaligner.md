@@ -1,13 +1,9 @@
 ---
-title: "ArcAligner"
+title: "ArcAligner: Adaptive Recursive Aligner for Compressed Context Embeddings in RAG"
 date: 2026-10-10
 ---
 
-# ArcAligner: Adaptive Recursive Aligner for Compressed Context Embeddings in RAG
-
 > Embeddings in RAG
-
-**目录**
 
 - [为什么要用 embedding，不用标准的基于检索的 RAG 进行回答？](#为什么要用-embedding不用标准的基于检索的-rag-进行回答)
 - [训练过程](#训练过程)

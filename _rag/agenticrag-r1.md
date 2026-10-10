@@ -1,11 +1,7 @@
 ---
-title: "AgenticRAG-R1"
+title: "AGENTICRAG-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing"
 date: 2026-10-10
 ---
-
-# AGENTICRAG-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing
-
-**目录**
 
 - [可逆 memory 适用场景：多步推理](#可逆-memory-适用场景多步推理)
 - [格式奖励](#格式奖励)

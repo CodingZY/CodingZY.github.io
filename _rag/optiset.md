@@ -1,11 +1,7 @@
 ---
-title: "OptiSet"
+title: "OptiSet: Unified Optimizing Set Selection and Ranking for Retrieval-Augmented Generation"
 date: 2026-10-10
 ---
-
-# OptiSet: Unified Optimizing Set Selection and Ranking for Retrieval-Augmented Generation
-
-**目录**
 
 - [在跨多文档回答时，基于语义相似度的 topK 不适合](#在跨多文档回答时基于语义相似度的-topk-不适合)
 - [无文档基线（H_0）与分段映射公式的作用](#无文档基线h_0与分段映射公式的作用)

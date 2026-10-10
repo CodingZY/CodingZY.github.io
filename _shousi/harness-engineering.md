@@ -4,8 +4,6 @@ date: 2026-10-10
 tags: [系统过Harness Agent基础]
 ---
 
-**目录**
-
 - [Harness 层级结构](#harness-层级结构)
   - [层间通信](#层间通信)
   - [Agent 循环](#agent-循环)

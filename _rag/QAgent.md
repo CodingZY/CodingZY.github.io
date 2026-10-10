@@ -1,11 +1,7 @@
 ---
-title: "QAgent"
+title: "QAgent: A modular Search Agent with Interactive Query Understanding"
 date: 2026-10-10
 ---
-
-# QAgent: A modular Search Agent with Interactive Query Understanding
-
-**目录**
 
 - [RAG 路线图](#rag-路线图)
 - [轨迹间利用结果奖励计算 GRPO](#轨迹间利用结果奖励计算-grpo)
