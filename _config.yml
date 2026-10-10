@@ -294,6 +294,9 @@ collections:
   agent:
     output: true
     permalink: /qiuzhao/agent/:name/
+  high-concurrency:
+    output: true
+    permalink: /qiuzhao/high-concurrency/:name/
 
 # Defaults
 defaults:
@@ -378,6 +381,15 @@ defaults:
   - scope:
       path: ""
       type: agent
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      toc: true
+  # _high-concurrency（秋招 · 高并发 AI 工程链路建设）
+  - scope:
+      path: ""
+      type: high-concurrency
     values:
       layout: single
       author_profile: true

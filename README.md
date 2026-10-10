@@ -16,6 +16,7 @@
 | 论文阅读 · Memory | `/papers/memory/` | `_memory/` | Memory 方向论文笔记 |
 | 秋招 · hot100 | `/qiuzhao/hot100/` | `_hot100/` | LeetCode Hot 100 刷题笔记 |
 | 秋招 · Agent八股 | `/qiuzhao/agent/` | `_agent/` | Agent 方向面试八股 |
+| 秋招 · 高并发 AI 工程链路建设 | `/qiuzhao/high-concurrency/` | `_high-concurrency/` | 高并发场景下 AI 工程链路建设笔记 |
 
 ## 本地构建
 
@@ -62,6 +63,7 @@ _rag/         论文阅读 · RAG 集合
 _memory/      论文阅读 · Memory 集合
 _hot100/      秋招 · hot100 集合
 _agent/       秋招 · Agent八股 集合
+_high-concurrency/ 秋招 · 高并发 AI 工程链路建设 集合
 harness-agent/ Harness Agent 栏目页
 papers/       论文阅读 栏目页
 qiuzhao/      秋招 栏目页

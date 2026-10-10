@@ -11,6 +11,7 @@ Contributor guide for a personal website built with [Jekyll](https://jekyllrb.co
 - `_memory/` — Jekyll collection for "论文阅读 → Memory" (`/papers/memory/`)
 - `_hot100/` — Jekyll collection for "秋招 → hot100" (`/qiuzhao/hot100/`)
 - `_agent/` — Jekyll collection for "秋招 → Agent八股" (`/qiuzhao/agent/`)
+- `_high-concurrency/` — Jekyll collection for "秋招 → 高并发 AI 工程链路建设" (`/qiuzhao/high-concurrency/`)
 - `harness-agent/`, `papers/`, `qiuzhao/` — section landing pages (one `index.md` per section / subsection)
 - `_data/` — site data (`navigation.yml`, `authors.yml`, `ui-text.yml`)
 - `_config.yml` — site metadata, navigation, and comment settings

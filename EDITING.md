@@ -12,6 +12,7 @@
 | 论文阅读 | Memory | `_memory/` | `/papers/memory/` |
 | 秋招 | hot100 | `_hot100/` | `/qiuzhao/hot100/` |
 | 秋招 | Agent八股 | `_agent/` | `/qiuzhao/agent/` |
+| 秋招 | 高并发 AI 工程链路建设 | `_high-concurrency/` | `/qiuzhao/high-concurrency/` |
 
 另有「关于我」（`_pages/about.md`，路径 `/about/`）。
 
