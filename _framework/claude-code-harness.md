@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Harness"
 date: 2026-10-10
-tags: [Harness Agent, 前沿Harness框架学习]
+tags: [Claude Code Harness框架学习]
 ---
 
 **目录**
